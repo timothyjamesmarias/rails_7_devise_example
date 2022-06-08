@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap";
+
+body{
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.page-title{
+    text-align: center;
+    padding-top: 5rem;
+}
+
