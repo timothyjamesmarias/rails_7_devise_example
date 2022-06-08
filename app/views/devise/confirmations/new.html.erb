@@ -1,11 +1,11 @@
-<div class="d-flex flex-column justify-content-center align-items-center">
+<h2 class="page-title">Resend confirmation instructions</h2>
 
-  <h2>Resend confirmation instructions</h2>
+<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
 
-  <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-    <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="d-flex flex-column justify-content-center align-items-center">
 
-    <div class="form-group mb-3">
+    <div class="form-group mb-3 w-50">
       <%= f.label :email, class:"form-label" %>
       <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class:"form-control" %>
     </div>
@@ -14,7 +14,8 @@
       <%= f.submit "Resend confirmation instructions", class:"btn btn-lg btn-primary rounded-pill" %>
     </div>
 
-  <% end %>
+    <%= render "devise/shared/links" %>
 
-  <%= render "devise/shared/links" %>
-</div>
+  </div>
+
+<% end %>
