@@ -8,7 +8,6 @@ Feel free to use this as a skeleton for your project, fork it for your own purpo
 This project is a work in progress; I plan to add more authentication features and better styling.
 
 ## Getting Started
----
 
 ### Requirements
 - Ruby 3.0.3
@@ -28,7 +27,6 @@ rails s
 ```
 
 ## App Screenshots
----
 
 ### Home Index Page
 ![home-page](/media/2022-06-08-150451_1600x900_scrot.png)
