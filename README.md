@@ -41,10 +41,6 @@ rails s
 
 ![sign-in](/media/2022-06-08-150325_1600x900_scrot.png)
 
-### Resend Confirmations
-
-![resend-pass](media/2022-06-08-134442_516x317_scrot.png)
-
 ## References
 
 I took inspiration from [this project](https://github.com/imhta/rails_6_devise_example). If you are using Rails 6, be sure to check it out!
