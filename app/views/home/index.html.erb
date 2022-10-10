@@ -2,4 +2,8 @@
     <h1 class="">Welcome</h1>
     <h3>Rails 7 skeleton app with Devise and Bootstrap</h3>
     <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-lg btn-primary rounded-pill" %>
+  <br>
+    <%= link_to "sign out", destroy_user_session_path, data: {turbo_method: :delete,
+                                                          turbo_confirm: "Are you sure?"}, class: "btn btn-lg rounded-pill btn-primary" %>
+    <%= link_to "log in", new_user_session_path, class: "btn btn-lg btn-primary rounded-pill" %>
 </div>
